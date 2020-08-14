@@ -7,7 +7,7 @@
 <p>Enter Zip Code</p>
 
 
-<input type="number" id="zipCode"></input>
+<input type="number" id="zipCode">
 <button id="checkButton" onClick="checkInput()">Check</button>
 <br>
 <H1 id="result"></H1>
