@@ -286,7 +286,11 @@ if (hot&&(
         {
             document.getElementById("upgrade").innerHTML = "Upgrade: No";
         }
-
+if(hot){
+document.getElementById("result").sytle.color="red";
+}else{
+document.getElementById("result").style.color="blue";
+}
 
 document.getElementById("result").innerHTML = toInt + ": " + infoText;
 }
