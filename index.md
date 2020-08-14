@@ -20,7 +20,13 @@ var toInt = 0;
 var InfoText = "";
 toInt = document.getElementById("zipCode").value;
 
-if ((toInt >= 37300 && toInt <= 37999)
+if(toInt<10000 || toInt>99999)
+	{
+		hot = False;
+                infoText = "Invalid Input";
+	}
+
+else if ((toInt >= 37300 && toInt <= 37999)
                 || (toInt >= 28700 && toInt <= 28999)
                 || (toInt >= 30100 && toInt < 30200)
                 || (toInt >= 30700 && toInt < 30800)
