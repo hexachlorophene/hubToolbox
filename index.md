@@ -16,6 +16,7 @@
 function checkEnter(ev){
 	if(ev.keyCode==13){
 		checkInput();
+		document.getElementById("zipCode").select();
 		}
 	}
 
@@ -24,6 +25,7 @@ var Hot = false;
 var toInt = 0;
 var InfoText = "";
 toInt = document.getElementById("zipCode").value;
+document.getElementById("zipCode").select();
 
 if(toInt<10000 || toInt>99999)
 	{
