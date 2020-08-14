@@ -22,7 +22,7 @@ toInt = document.getElementById("zipCode").value;
 
 if(toInt<10000 || toInt>99999)
 	{
-		hot = False;
+		hot = false;
                 infoText = "Invalid Input";
 	}
 
