@@ -7,12 +7,17 @@
 <p>Enter Zip Code</p>
 
 
-<input type="number" id="zipCode">
+<input type="number" id="zipCode" onkeypress="checkEnter(event)">
 <button id="checkButton" onClick="checkInput()">Check</button>
 <br>
 <H1 id="result"></H1>
 <H1 id="upgrade"></H1>
 <script>
+function checkEnter(ev){
+	if(ev.keyCode==13){
+		checkInput();
+		}
+	}
 
 function checkInput(){
 var Hot = false;
@@ -22,6 +27,7 @@ toInt = document.getElementById("zipCode").value;
 
 if(toInt<10000 || toInt>99999)
 	{
+		alert("Invalid Input");
 		hot = false;
                 infoText = "Invalid Input";
 	}
