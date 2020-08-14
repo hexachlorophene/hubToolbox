@@ -23,7 +23,7 @@ function checkEnter(ev){
 function checkInput(){
 var hot = false;
 var toInt = 0;
-var InfoText = "";
+var infoText = "";
 toInt = document.getElementById("zipCode").value;
 document.getElementById("zipCode").select();
 
@@ -155,7 +155,7 @@ else if ((toInt >= 37300 && toInt <= 37999)
             if(toInt >=25700  && toInt<=25799 || toInt >= 47100 && toInt <= 47199)
             {
                 hot = false;
-				infoText = "Cold (Check for Next Day)";
+		infoText = "Cold (Check for Next Day)";
             }
 	
 
