@@ -288,7 +288,7 @@ if (hot&&(
         }
 
 
-document.getElementById("result").innerHTML = infoText;
+document.getElementById("result").innerHTML = toInt + ":" + infoText;
 }
 </script>
 </body>
