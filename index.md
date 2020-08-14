@@ -21,7 +21,7 @@ function checkEnter(ev){
 	}
 
 function checkInput(){
-var Hot = false;
+var hot = false;
 var toInt = 0;
 var InfoText = "";
 toInt = document.getElementById("zipCode").value;
